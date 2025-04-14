@@ -8,7 +8,7 @@ const Users = () => {
     return (
         <div className='text-center text-2xl mt-4'>
             <h1>users: {users.length}</h1>
-            <div>
+            <div className='grid grid-cols-3 gap-10 container mx-auto'>
                 {
                     users.map(user=> <User key={user.id} user={user}></User>)
                 }
